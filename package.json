@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"displayName": "esperecyan/vcas-lua-univci-sync",
 	"description": "EmbeddedScriptWorkspaceフォルダ内の .lua ファイルが更新されたときに、Unityプロジェクト内のVCIプレハブのLuaデータを更新します。",
-	"unity": "2021.4",
+	"unity": "2021.3",
 	"documentationUrl": "https://github.com/esperecyan/vcas-lua-univci-sync",
 	"changelogUrl": "https://github.com/esperecyan/vcas-lua-univci-sync/releases",
 	"license": "MPL-2.0",
