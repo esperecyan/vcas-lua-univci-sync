@@ -1,0 +1,18 @@
+{
+    "name": "Esperecyan.VCasLuaUniVCISync",
+    "rootNamespace": "Esperecyan.VCasLuaUniVCISync",
+    "references": [
+        "GUID:d509503b08aff8748bb271bf805c1551"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
