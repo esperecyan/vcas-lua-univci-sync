@@ -1,6 +1,6 @@
 {
 	"name": "jp.pokemori.vcas-lua-univci-sync",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"displayName": "esperecyan/vcas-lua-univci-sync",
 	"description": "EmbeddedScriptWorkspaceフォルダ内の .lua ファイルが更新されたときに、Unityプロジェクト内のVCIプレハブのLuaデータを更新します。",
 	"unity": "2021.3",
