@@ -65,21 +65,24 @@ namespace Esperecyan.VCasLuaUniVCISync
 
                     var scriptName = Path.GetFileNameWithoutExtension(e.FullPath);
                     var script = vciObject.Scripts.Find(s => s.name == scriptName);
-                    if (script == null || !string.IsNullOrEmpty(script.filePath))
+                    if (script == null || script.filePath == e.FullPath)
                     {
                         break;
                     }
 
-                    var code = File.ReadAllText(e.FullPath);
                     if (script.textAsset != null)
                     {
                         var luaAssetPath = AssetDatabase.GetAssetPath(script.textAsset);
-                        File.WriteAllText(Path.GetFullPath(luaAssetPath), code);
+                        File.WriteAllText(Path.GetFullPath(luaAssetPath), File.ReadAllText(e.FullPath));
                         AssetDatabase.ImportAsset(luaAssetPath);
+                    }
+                    else if (!string.IsNullOrEmpty(script.filePath))
+                    {
+                        File.Copy(sourceFileName: e.FullPath, destFileName: script.filePath, overwrite: true);
                     }
                     else
                     {
-                        script.source = code;
+                        script.source = File.ReadAllText(e.FullPath);
                     }
 
                     break;
