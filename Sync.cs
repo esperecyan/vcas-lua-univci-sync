@@ -9,7 +9,7 @@ namespace Esperecyan.VCasLuaUniVCISync
     internal static class Sync
     {
         private static readonly string SourceFolderPath
-            = @"%USERPROFILE%\AppData\LocalLow\infiniteloop Co,Ltd\VirtualCast\EmbeddedScriptWorkspace";
+            = @"%USERPROFILE%\AppData\LocalLow\VirtualCast\VirtualCast\EmbeddedScriptWorkspace";
 
         private static SynchronizationContext MainThreadContext;
         private static string SourceFolderFullPath;
